@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cp -vr iservchk/* /usr/share/iserv/iconf/etc/iserv/chk.d/

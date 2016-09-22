@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cp -v /usr/share/iserv/iconf/etc/iserv/chk.d/40iserv3/30stsbl iservchk/40iserv3/

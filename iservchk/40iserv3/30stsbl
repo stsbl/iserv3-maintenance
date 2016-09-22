@@ -1,0 +1,10 @@
+Test 'StsBl IServ 3 maintenance'
+  cmp -s <(for i in $(ls -t /var/lib/dpkg/info/stsbl-*.list); do
+      stat -c '%n %Z' "$i"; done | md5sum | awk '{ print $1 }')\
+    /var/cache/iserv/web/stsbl.maintenance.stamp
+  ---
+  STAMP="$(for i in $(ls -t /var/lib/dpkg/info/stsbl-*.list); do stat -c '%n %Z'\
+        "$i"; done | md5sum | awk '{ print $1 }')"
+  /usr/lib/iserv/iserv3 ||
+    (rm -rf /var/cache/iserv/web/{dev,prod,test} && /usr/lib/iserv/iserv3) &&
+    echo "$STAMP" > /var/cache/iserv/web/stsbl.maintenance.stamp

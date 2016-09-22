@@ -1,0 +1,14 @@
+Source: stsbl-iserv3-maintenance
+Section: misc
+Priority: extra
+Maintainer: Stadtteilschule Blankenese <repository@stsbl.de>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://repository.stsbl.de/
+
+Package: stsbl-iserv3-maintenance
+Architecture: all
+Depends: iserv-portal
+Description: Stadtteilschule Blankenese: IServ 3 Wartung
+ Dieses Paket führt IServ 3-Wartungsoperationen durch, wenn neue
+ IServ 3-Module installiert wurden.
