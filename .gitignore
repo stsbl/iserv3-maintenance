@@ -1,0 +1,5 @@
+debian/stsbl-iserv3-maintenance/*
+debian/stsbl-iserv3-maintenance.debhelper.log
+debian/stsbl-iserv3-maintenance.substvars
+debian/files
+debian/debhelper-build-stamp
