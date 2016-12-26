@@ -12,3 +12,4 @@ Depends: iserv-portal
 Description: Stadtteilschule Blankenese: IServ 3 Wartung
  Dieses Paket führt IServ 3-Wartungsoperationen durch, wenn neue
  IServ 3-Module installiert wurden.
+Tag: suite::iserv:portal, role::shared-lib, implemented-in::shell
