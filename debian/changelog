@@ -1,3 +1,10 @@
+stsbl-iserv3-maintenance (16.12.26-0) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Updated deb tags.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Mon, 26 Dec 2016 05:53:59 +0100
+
 stsbl-iserv3-maintenance (16.09.22-0) experimental; urgency=medium
 
   * Initial release.
