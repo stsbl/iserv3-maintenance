@@ -3,11 +3,11 @@ Upstream-Name: stsbl-iserv3-maintenance
 Source: https://repository.stsbl.de
 
 Files: *
-Copyright: 2016 Felix Jacobi <felix.jacobi@stsbl.de>
+Copyright: 2017 Felix Jacobi <felix.jacobi@stsbl.de>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2016 Satdtteilschule Blankenese <repository@stsbl.de>
+Copyright: 2017 Satdtteilschule Blankenese <repository@stsbl.de>
 License: GPL-3.0+
 
 License: GPL-3.0+
