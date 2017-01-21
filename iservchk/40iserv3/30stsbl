@@ -8,3 +8,4 @@ Test 'StsBl IServ 3 maintenance'
   /usr/lib/iserv/iserv3 ||
     (rm -rf /var/cache/iserv/web/{dev,prod,test} && /usr/lib/iserv/iserv3) &&
     echo "$STAMP" > /var/cache/iserv/web/stsbl.maintenance.stamp
+
