@@ -2,7 +2,12 @@
 
 if [ "$1" = "remove" ] || [ "$1" = "purge" ]
 then
-  /usr/lib/iserv/iserv3 > /dev/null || (rm -rf /var/cache/iserv/web/{prod,dev,test} && /usr/lib/iserv/iserv3) > /dev/null
+   # when we are called by actadm we don't have a path
+   export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+   # clean cache multiple times, first time may not work
+   # if clearing fails also exit with 0 to prevent dpkg remove fail
+   /usr/lib/iserv/iserv3 &> /dev/null || (rm -rf /var/cache/iserv/web/{prod,dev,test} && /usr/lib/iserv/iserv3) &> /dev/null || /usr/lib/iserv/iserv3 &> /dev/null || (rm -rf /var/cache/iserv/web/{prod,dev,test} && /usr/lib/iserv/iserv3) &> /dev/null || true
+
 fi
 
 exit 0
