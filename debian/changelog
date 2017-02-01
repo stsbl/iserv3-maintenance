@@ -1,3 +1,15 @@
+stsbl-iserv3-maintenance (17.02.01-0) experimental; urgency=medium
+
+  [ Felix Jacobi ]
+  * Added final new line.
+  * Added postrm script to clear cache.
+    This should avoid the situation that the cache is not cleared if all
+    IServ 3 Packages are removed, because the maintenance package is removed
+    with them. Thanks to Timo Schnadhorst for the bug report.
+  * Improved postrm script.
+
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Wed, 01 Feb 2017 17:27:59 +0100
+
 stsbl-iserv3-maintenance (17.01.21-0) experimental; urgency=medium
 
   [ Felix Jacobi ]
