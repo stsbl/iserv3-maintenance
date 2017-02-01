@@ -2,7 +2,7 @@
 
 if [ "$1" = "remove" ] || [ "$1" = "purge" ]
 then
-  (rm -rf /var/cache/iserv/web/{prod,dev,test} || true) && /usr/lib/iserv/iserv3
+  /usr/lib/iserv/iserv3 > /dev/null || (rm -rf /var/cache/iserv/web/{prod,dev,test} && /usr/lib/iserv/iserv3) > /dev/null
 fi
 
 exit 0
