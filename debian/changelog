@@ -8,7 +8,7 @@ stsbl-iserv3-maintenance (17.02.01-0) experimental; urgency=medium
     with them. Thanks to Timo Schnadhorst for the bug report.
   * Improved postrm script.
 
- -- Stadtteilschule Blankenese <repository@stsbl.de>  Wed, 01 Feb 2017 17:27:59 +0100
+ -- Stadtteilschule Blankenese <repository@stsbl.de>  Wed, 01 Feb 2017 18:36:15 +0100
 
 stsbl-iserv3-maintenance (17.01.21-0) experimental; urgency=medium
 
