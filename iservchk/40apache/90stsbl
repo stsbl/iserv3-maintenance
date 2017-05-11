@@ -1,0 +1,7 @@
+Test 'clear cache'
+  [ "$(ls -t /var/lib/dpkg/info/stsbl* | head -n1)" -ot "/var/cache/iserv/cache.stamp" ]
+  ---
+  DATE="$(date -R)"
+  curl -s http://localhost/idesk/clearcache.php &&
+    touch -d"$DATE" /var/cache/iserv/cache.stamp
+
