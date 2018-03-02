@@ -1,3 +1,13 @@
+stsbl-iserv3-maintenance (18.03.02-1) experimental; urgency=medium
+
+  * Added license
+  * Updated copyright
+  * Added lintian overrides
+  * Removed obsolete "StsBl IServ 3 maintenance"
+  * Updated packaging
+
+ -- Felix Jacobi <felix.jacobi@iserv.eu>  Fri, 02 Mar 2018 16:56:13 +0100
+
 stsbl-iserv3-maintenance (17.05.11-0) experimental; urgency=medium
 
   [ Felix Jacobi ]
