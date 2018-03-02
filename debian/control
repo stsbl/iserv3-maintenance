@@ -8,7 +8,9 @@ Homepage: https://repository.stsbl.de/
 
 Package: stsbl-iserv3-maintenance
 Architecture: all
-Depends: iserv-portal
+Depends: ${misc:Depends},
+  iserv-portal,
+Xb-Private-IServ-Revision: ${iserv:Revision}
 Description: Stadtteilschule Blankenese: IServ 3 Wartung
  Dieses Paket führt IServ 3-Wartungsoperationen durch, wenn neue
  IServ 3-Module installiert wurden.
