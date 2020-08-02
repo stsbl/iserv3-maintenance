@@ -1,3 +1,13 @@
+stsbl-iserv3-maintenance (20.08.02-1) testing; urgency=medium
+
+  * Updated packaging
+  * Debian/control: Updated Standards-Version
+  * Removed obsolete postrm script
+  * Updated build rules for webpack support
+  * Bumped copyright
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Sun, 02 Aug 2020 06:34:25 +0200
+
 stsbl-iserv3-maintenance (18.03.02-2) experimental; urgency=medium
 
   * Added missing substition variables
