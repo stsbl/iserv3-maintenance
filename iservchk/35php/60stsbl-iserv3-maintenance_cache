@@ -1,0 +1,11 @@
+# Note: php-fpm.service is a pseudo unit provided by iserv-server-php which
+# acts like a target can be reloaded. The real php*-php.service units are
+# bound to these one and will also react on reload/restarts. Therefor there is
+# no need to check for a real FPM unit here at all.
+Test "clear opcache"
+  [ "$(ls -t /var/lib/dpkg/info/stsbl* | head -n1)" -ot "/var/cache/iserv/stsbl-fpm-opcache.stamp" ]
+  ---
+  DATE="$(date -R)"
+  systemctl reload-or-restart php-fpm.service &&
+      touch -d"$DATE" /var/cache/iserv/stsbl-fpm-opcache.stamp
+
