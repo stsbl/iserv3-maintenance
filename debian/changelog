@@ -1,3 +1,9 @@
+stsbl-iserv3-maintenance (22.11.08.1) stable; urgency=medium
+
+  * Added OPCache clear for PHP FPM
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Tue, 08 Nov 2022 10:03:11 +0100
+
 stsbl-iserv3-maintenance (21.08.17.1) stable; urgency=medium
 
   * Switched to git source format
